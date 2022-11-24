@@ -1,10 +1,14 @@
 import mongoose from 'mongoose';
 
+import connection from './mongoose.js'
+
 import express from 'express';
 
 import cors from 'cors';
 
 import Game from './model/Game.js';
+
+import gameRoutes from './routes/games.js';
 
 const app = express();
 
@@ -17,12 +21,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-//app.use(require("./routes/record"));
-
-// get driver connection
-const Db = process.env.ATLAS_URI;
-mongoose.connect(Db)
-mongoose.connection.on("error", console.error.bind(console, "MongoDB connection error:"));
+app.use(gameRoutes)
 
 const gameEntry = new Game({
 
