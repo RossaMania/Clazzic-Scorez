@@ -1,7 +1,5 @@
 import express from 'express';
 
-import connection from '../mongoose.js'
-
 import Game from '../model/Game.js';
 
 const gameRoutes = express.Router();
