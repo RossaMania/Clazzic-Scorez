@@ -7,6 +7,7 @@ function Scores() {
 
   function handleChange(event) {
     const newValue = event.target.value;
+    console.log(newValue);
     setInputScore(newValue);
   }
 
@@ -14,6 +15,7 @@ function Scores() {
     setScores((prevScores) => {
       return [...prevScores, inputScore];
     });
+    console.log("Score added! A winner is you");
   }
 
   return (
