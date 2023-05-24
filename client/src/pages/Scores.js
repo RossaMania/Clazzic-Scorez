@@ -36,12 +36,14 @@ function Scores() {
       <div>
         <ul>
           {scores.map(score => {
-            return <li>{score.name} {score.score}</li>
+            return (
+              <li key={score.name}>{score.name} {score.score}</li>
+            )
           })}
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
 export default Scores;
