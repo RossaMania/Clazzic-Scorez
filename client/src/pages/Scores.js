@@ -11,12 +11,12 @@ function Scores() {
     setInputScore(newValue);
   }
 
-  function addScore() {
+  function addScore(score) {
     setScores((prevScores) => {
-      return [...prevScores, inputScore];
+      return [...prevScores, score];
     });
     console.log("Score added! A winner is you!");
-    console.log(setScores);
+    console.log(score);
   }
 
   return (
