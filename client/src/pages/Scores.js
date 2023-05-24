@@ -15,7 +15,8 @@ function Scores() {
     setScores((prevScores) => {
       return [...prevScores, inputScore];
     });
-    console.log("Score added! A winner is you");
+    console.log("Score added! A winner is you!");
+    console.log(setScores);
   }
 
   return (
