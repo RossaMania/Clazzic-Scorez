@@ -27,7 +27,7 @@ function Scores() {
       <div>
         <ul>
           {scores.map(score => {
-            return score;
+            return <li>{score.score}</li>
           })}
         </ul>
       </div>
