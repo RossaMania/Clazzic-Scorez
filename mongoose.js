@@ -9,4 +9,4 @@ const Db = process.env.ATLAS_URI;
 mongoose.connect(Db)
 mongoose.connection.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-export default mongoose
+export const connection = mongoose.connection;
