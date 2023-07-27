@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react';
 // }
 
 
-function Games() {
+const Games = () => {
   const [games, setGames] = useState([]);
 
   useEffect(function() {

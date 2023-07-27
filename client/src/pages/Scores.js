@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-function Scores() {
+const Scores = () => {
   const [inputScore, setInputScore] = useState({
     name: "",
     score:""
